@@ -53,6 +53,10 @@ module Mailgun
     def self.deliveries
       @@deliveries ||= []
     end
+    
+    def self.clear_deliveries
+      @@deliveries = []
+    end
 
     # Simple Message Sending
     #
